@@ -3,15 +3,19 @@
 
 
 let randomNum = [];
-while (randomNum.length < 3) {
-    let randomNumber = Math.floor(Math.random() * 100);
-    randomNum.push(randomNumber);
-}
-console.log(randomNum)
+newFunction();
 alert(randomNum)
 
 
 setTimeout(timer, 300)
+function newFunction() {
+    while (randomNum.length < 5) {
+        let randomNumber = Math.floor(Math.random() * 30000);
+        randomNum.push(randomNumber);
+    }
+    console.log(randomNum);
+}
+
 function timer() {
     console.log('ciao')
     let userNumContainer = []
