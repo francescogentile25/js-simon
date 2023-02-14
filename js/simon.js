@@ -7,10 +7,10 @@ newFunction();
 alert(randomNum)
 
 
-setTimeout(timer, 300)
+setTimeout(timer, 30)
 function newFunction() {
     while (randomNum.length < 5) {
-        let randomNumber = Math.floor(Math.random() * 30000);
+        let randomNumber = Math.floor(Math.random() * 100);
         randomNum.push(randomNumber);
     }
     console.log(randomNum);
@@ -19,7 +19,7 @@ function newFunction() {
 function timer() {
     console.log('ciao')
     let userNumContainer = []
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 5; i++) {
         userNum = parseInt(prompt('Quali sono i numeri che hai visto?'))
         console.log(userNum)
         userNumContainer.push(userNum)
